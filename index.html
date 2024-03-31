@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>  
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Encriptador</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/imagenes/Recurso 3.png">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap"
+        rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <div class="container__header">
+            <div class="header">
+                    <img class="logo" src="assets/imagenes/Recurso 1.png">
+            </div>  
+        </div>
+    </header>
+    <main>
+        <article class="container">
+            <section class="left" id="left">
+                <textarea class="inputtextarea" id="textoInput" placeholder="Write your text here..." autofocus></textarea>
+                <div class="content_botones">
+                    <span class="info">
+                        <img src="./assets/imagenes/!.svg" alt="advertencia" />
+                        Only lowercase letters and no accents.
+                    </span>
+                    <div class="botones">
+                        <button id="button__encriptar" class="button__encriptar">Encrypt</button>
+                        <button id="button__desencriptar" class="button__desencriptar">Decrypt</button>
+                    </div>
+                </div>
+            </section>
+            <section class="right" id="rigth">
+                <img id="dibujo" class="dibujo" src="assets/imagenes/Recurso 2.png" alt="No message found. Write the text you wish to Encrypt or > Decrypt.">
+                <textarea id="textoFinal" class="textoFinal" placeholder="No message found"></textarea>
+                <p id="textoInfo" class="info">Write the text you wish to Encrypt or > Decrypt.</p>
+                <button class="button__copiar bn_ocultar" id="button__copiar">Copiar</button>
+            </section>
+        </article>
+    </main>
+    <footer class="footer ">
+        <p class="creador">Created by Laura Alfonso</p>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
